@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+        body {
+            background-color: #bdbdbd;
+        }
+
+        header {
+            background-color: #003b6d;
+        }
+
+        nav {
+            color: #003b6d;
+            background-color: #bdbdbd;
+        }
+
+        h1 {
+            color: #003b6d;
+        }
+        form {
+            background-color: #003b6d;
+            color: #bdbdbd;
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+        }
+        label {
+            margin: 5px;
+            padding: 5px;
+        }
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,6 +49,7 @@
         </nav>
     </header>
     <section>
+        <h1>Evidence-based pet care advice for every pet lover</h1>
         <p>
             Pets are nature's gift to humanity. 
             It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. 
@@ -50,24 +84,7 @@
         <form>
             <label for="userName">Name:</label>
             <input type="text" name="userName">
-            <br>
-            <br>
-            <label for="phoneNumber">Phone:</label>
-            <input type="text" name="phoneNumber">
-            <br>
-            <br>
-            <label for="email">Email:</label>
-            <input type="text" name="email">
-            <br>
-            <br>
-            <label for="timeZone">Timezone:</label>
-            <input type="text" name="timeZone">
-        </form>
-    </section>
-    <br>
-    <section>
-        <form>
-            <label for="petType">Type:</label>
+            <label for="petType">Pet Type:</label>
             <input type="checkbox" name="pet1" value="Dog">
             <label for="pet1">Dog</label>
             <input type="checkbox" name="pet2" value="Cat">
@@ -76,12 +93,22 @@
             <label for="pet3">Bird</label>
             <br>
             <br>
-            <label for="petName">Name:</label>
+            <label for="phoneNumber">Phone:</label>
+            <input type="text" name="phoneNumber">
+            <label for="petName">Pets Name:</label>
             <input type="text" name="petName">
             <br>
             <br>
-            <label for="petAge">Age:</label>
+            <label for="email">Email:</label>
+            <input type="text" name="email">
+            <label for="petAge">Pets Age:</label>
             <input type="text" name="petAge">
+            <br>
+            <br>
+            <label for="timeZone">Timezone:</label>
+            <input type="text" name="timeZone">
+            <br>
+            <input type="button" onclick="alert('Form Submitted!')" value="Submit" style="padding: 15px; margin: 20px; float:inline-end; width: 200px;">
         </form>
     </section>
 
