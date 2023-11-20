@@ -37,23 +37,65 @@
             margin: 5px;
             padding: 5px;
         }
-        nav a {
-            padding-left: 30px;
-            margin: 10px;
+        .navbar {
+            background-color: #003b6d;
+            position: relative;
+            z-index: 999;
         }
-        a {
-            padding-left: 10px;
+        .navbar ul {
+            background-color: #003b6d;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar li a {
+            color: #fff;
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .navbar ul ul {
+            position: absolute;
+            top: 100%;
+            display: none;
+        }
+        .navbar ul ul li {
+            display: block;
+        }
+        .navbar li:hover ul {
+            display: block;
+        }
+        .navbar ul ul li a:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="/images/newLogo.jpg" alt="Paradigm Pet Professionals Logo" width="400px" length="200px">
-        <nav>
-            <a href="/pages/index.html">Home</a>
-            <a href="/pages/dogOwners.html">Dog Owners</a>
-            <a href="/pages/catOwners.html">Cat Owners</a>
-            <a href="/pages/birdOwners.html">Bird Owners</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/pages/index.html">Home</a></li>
+                <li><a href="/pages/dogOwners.html">Dog Owners</a>
+                    <ul>
+                        <li><a href="#">Diet & Exercise</a></li>
+                        <li><a href="#">Gromming & Handling</a></li>
+                        <li><a href="#">Vaccinations & Medications</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/catOwners.html">Cat Owners</a>
+                    <ul>
+                        <li><a href="#">Zero to Four Weeks</a></li>
+                        <li><a href="#">Four Weeks to One Year</a></li>
+                        <li><a href="#">One Year to Seven Years</a></li>
+                        <li><a href="#">Seven Years and More</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/birdOwners.html">Bird Owners</a></li>
+            </ul>
         </nav>
     </header>
     <section>
